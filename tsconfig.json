@@ -1,13 +1,19 @@
 {
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
+    "moduleResolution": "node",
+    "typeRoots": [
+      "./node_modules/@types",
+      "./types"
+    ],
     "jsx": "react-jsx",
     "strict": true,
   },
   "include": [
+    "assets/icons/**/*.png",
     "**/*.ts",
     "**/*.tsx",
     ".expo/types/**/*.ts",
-    "expo-env.d.ts"
-, "components/home/welcome/welcome.style.js"  ]
+    "expo-env.d.ts",
+    "components/home/welcome/welcome.style.js", "constants/icons.js", "components/home/popular/Popularjobs.jsx", "app/job-details/[id].js"]
 }
