@@ -10,7 +10,7 @@
     "test": "jest --watchAll",
     "build": "expo build:web"
   },
-  "engines": { "node": ">=21.0.0", "npm": ">=10.0.0" },
+  "engines": { "node": "21.x", "npm": ">=10.x" },
   "jest": {
     "preset": "jest-expo"
   },
