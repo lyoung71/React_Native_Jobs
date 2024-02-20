@@ -3,13 +3,11 @@ import { StyleSheet, ScrollView, SafeAreaView  } from 'react-native';
 import EditScreenInfo from '../../components/EditScreenInfo';
 import { Text, View } from '../../components/Themed';
 import { Stack, useRouter } from 'expo-router';
-
 import { COLORS, icons, images, SIZES } from '../../constants';
 import {
   Nearbyjobs, Popularjobs, ScreenHeaderBtn, Welcome
 } from '../../components';
-import { DarkTheme } from '@react-navigation/native';
-import { Colors } from 'react-native/Libraries/NewAppScreen';
+
 
 const Home = () => {
   const router = useRouter();
@@ -24,7 +22,7 @@ const Home = () => {
           <ScreenHeaderBtn iconUrl={icons.menu} dimension="60%" />
         ),
         headerRight: () => (
-          <ScreenHeaderBtn iconUrl={images.profile} dimension="100%" />
+          <ScreenHeaderBtn iconUrl={images.profile} dimension="100%"/>
         ),
         headerTitle: ""
       }}
