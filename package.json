@@ -8,7 +8,7 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "test": "jest --watchAll",
-    "build": "expo build:web"
+    "build": "npx expo export:web"
   },
   "engines": { "node": "21.x", "npm": ">=10.x" },
   "jest": {
